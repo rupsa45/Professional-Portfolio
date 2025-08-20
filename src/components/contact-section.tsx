@@ -65,13 +65,13 @@ export function ContactSection() {
               Download Resume
             </Button>
 
-            <div className="bg-muted/30 rounded-lg p-4 flex items-center justify-between">
-              <span className="text-foreground">{email}</span>
+            <div className="bg-muted/20 border border-muted/30 rounded-lg p-4 flex items-center justify-between hover:bg-muted/30 transition-all duration-200">
+              <span className="text-foreground font-medium">{email}</span>
               <Button
                 variant="outline"
                 size="sm"
                 onClick={copyEmail}
-                className="bg-muted/50 hover:bg-muted/70"
+                className="bg-primary/10 hover:bg-primary/20 border-primary/30 hover:border-primary/50 text-primary hover:text-primary/80 transition-all duration-200 font-medium px-4 py-2 rounded-md shadow-sm hover:shadow-md"
               >
                 {copied ? "Copied!" : "Copy"}
               </Button>

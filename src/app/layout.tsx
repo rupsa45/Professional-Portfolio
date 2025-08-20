@@ -18,7 +18,7 @@ const sourceSansPro = Source_Sans_Pro({
 })
 
 export const metadata: Metadata = {
-  title: "Professional Portfolio",
+  title: "Rupsa Das | Portfolio",
   description: "A modern professional portfolio showcasing skills and projects",
   generator: "v0.app",
 }
