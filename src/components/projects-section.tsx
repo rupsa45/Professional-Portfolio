@@ -1,0 +1,110 @@
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
+import { ExternalLink, Github } from "lucide-react"
+import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+
+const projects = [
+  {
+    title: "E-Commerce Platform",
+    description:
+      "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management and secure payment processing.",
+    technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Task Management App",
+    description:
+      "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    technologies: ["React", "Node.js", "Socket.io", "MongoDB"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Weather Analytics Dashboard",
+    description:
+      "An interactive dashboard displaying weather data with beautiful visualizations and predictive analytics capabilities.",
+    technologies: ["Vue.js", "D3.js", "Python", "FastAPI"],
+    liveUrl: "#",
+    githubUrl: "#",
+  },
+]
+
+export function ProjectsSection() {
+  const { ref, isVisible } = useScrollAnimation()
+
+  return (
+    <section
+      id="projects"
+      ref={ref}
+      className={`py-20 transition-all duration-1000 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      }`}
+    >
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          className={`text-center mb-16 transition-all duration-1000 delay-200 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+          }`}
+        >
+          <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Featured Projects</h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            A showcase of my recent work and technical capabilities
+          </p>
+        </div>
+
+        <div className="space-y-12">
+          {projects.map((project, index) => (
+            <Card
+              key={index}
+              className={`overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-1000 ${
+                isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+              }`}
+              style={{
+                transitionDelay: isVisible ? `${400 + index * 200}ms` : "0ms",
+              }}
+            >
+              <div className={`flex flex-col lg:flex-row ${index % 2 === 1 ? "lg:flex-row-reverse" : ""}`}>
+                <div className="lg:w-1/2 p-8 flex flex-col justify-center">
+                  <CardHeader className="p-0 mb-4">
+                    <CardTitle className="text-2xl hover:text-primary transition-colors duration-300">
+                      {project.title}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0 space-y-6">
+                    <p className="text-muted-foreground text-lg leading-relaxed">{project.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, techIndex) => (
+                        <span
+                          key={techIndex}
+                          className="px-3 py-1 bg-accent/20 text-accent-foreground text-sm rounded-full hover:bg-accent/30 hover:scale-105 transition-all duration-300 cursor-default"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                    <div className="flex gap-4 pt-2">
+                      <Button variant="outline" className="bg-transparent hover:scale-105 transition-all duration-300">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </Button>
+                      <Button variant="outline" className="bg-transparent hover:scale-105 transition-all duration-300">
+                        <Github className="h-4 w-4 mr-2" />
+                        View Code
+                      </Button>
+                    </div>
+                  </CardContent>
+                </div>
+                <div className="lg:w-1/2 bg-muted/30 flex items-center justify-center p-8 hover:bg-muted/40 transition-colors duration-300">
+                  <div className="w-full h-64 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center hover:scale-105 transition-transform duration-300">
+                    <span className="text-muted-foreground font-medium">{project.title}</span>
+                  </div>
+                </div>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
