@@ -8,10 +8,10 @@ export function HeroSection() {
         <div className="space-y-8">
           <div className="space-y-4">
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-foreground">
-              John <span className="text-primary">Doe</span>
+              Rupsa <span className="text-primary">Das</span>
             </h1>
             <p className="text-xl sm:text-2xl text-muted-foreground font-light">
-              Full Stack Developer & UI/UX Designer
+              Full Stack Developer
             </p>
           </div>
 
