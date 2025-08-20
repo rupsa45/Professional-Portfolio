@@ -20,31 +20,33 @@ export function HeroSection() {
             and user-centered design.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center ">
+            <Button  
+               size="lg" 
+               className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer">
               <Code className="h-5 w-5 mr-2" />
               View My Work
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="cursor-pointer">
               <Download className="h-5 w-5 mr-2" />
               Download Resume
             </Button>
           </div>
 
           <div className="flex justify-center space-x-6 pt-8">
-            <Button variant="ghost" size="icon" className="h-12 w-12">
+            <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
 
               <a href="https://github.com/rupsa45" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
 
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
+            <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
               <a href="https://www.linkedin.com/in/rupsa-das-96b26b231/" target="_blank" rel="noopener noreferrer">
               <Linkedin className="h-5 w-5" />
             </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12">
+            <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
               <Mail className="h-6 w-6" />
             </Button>
           </div>

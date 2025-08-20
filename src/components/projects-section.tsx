@@ -2,49 +2,49 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ExternalLink, Github, ShoppingCart, CheckSquare, BarChart3, Globe, Database, Zap } from "lucide-react"
+import { ExternalLink, Github, ShoppingCart, CheckSquare, BarChart3, Globe, Database, Sprout } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Online Bookstore",
     description:
-      "A full-stack e-commerce solution built with Next.js, featuring real-time inventory management, secure payment processing, and responsive design. Includes user authentication, product catalog, shopping cart, and admin dashboard.",
-    technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "A platform for users to upload and download free documents. Features include document categorization, search functionality, user authentication, and an admin panel for managing content.",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Tailwind CSS"],
+    liveUrl: "https://bookhaven24.vercel.app/",
+    githubUrl: "https://github.com/rupsa45/BookHaven-Backend",
     icon: ShoppingCart,
-    features: ["User Authentication", "Payment Processing", "Admin Dashboard", "Responsive Design"]
+    features: ["Product Catalog", "Shopping Cart", "Payment Integration", "Admin Dashboard"]
   },
   {
-    title: "Task Management App",
+    title: "Plant Diaries",
     description:
-      "A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features. Built with MERN stack for optimal performance and scalability.",
+      "A MERN stack blog platform where users can share plant care experiences. Public users can view posts, while registered users can create, update, and manage their own posts through a personalized dashboard.",
+    technologies: ["MongoDB", "Express.js", "React", "Node.js", "JWT", "Tailwind CSS"],
+    liveUrl: "https://plant-diaries-frontend.vercel.app/",
+    githubUrl: "https://github.com/rupsa45/PlantDiaries-Backend",
+    icon:Sprout,
+    features: ["Authentication", "User Dashboard", "CRUD Posts", "Responsive UI"]
+  },
+  {
+    title: "GreenThumb-Crop Recommendation System",
+    description:
+      "A system that predicts optimal crops based on soil parameters, weather conditions, and forecasts. Built with a React.js frontend integrated with a FastAPI backend powered by scikit-learn models to deliver real-time recommendations.",
+    technologies: ["React.js", "FastAPI", "Python", "scikit-learn", "Tailwind CSS"],
+    liveUrl: "https://green-thumb2025.vercel.app/",
+    githubUrl: "https://github.com/rupsa45/GreenThumb2025",
+    icon: BarChart3,
+    features: ["Crop Prediction", "Weather Integration", "Responsive UI", "Frontend-Backend Integration","Team Collaboration"]
+ },
+  {
+    title: "Employee Management System",
+    description:
+      "A real-time collaboration tool developed during my internship. Features task assignment, progress tracking, and Git workflow integration to streamline teamwork and project delivery.",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "Socket.io"],
-    liveUrl: "#",
+    liveUrl: "https://monitering-system-client.vercel.app/login",
     githubUrl: "#",
     icon: CheckSquare,
-    features: ["Real-time Updates", "Drag & Drop", "Team Collaboration", "Task Tracking"]
-  },
-  {
-    title: "Weather Analytics Dashboard",
-    description:
-      "An interactive dashboard displaying weather data with beautiful visualizations and predictive analytics capabilities. Features real-time data fetching and customizable charts.",
-    technologies: ["Vue.js", "D3.js", "Python", "FastAPI", "Chart.js"],
-    liveUrl: "#",
-    githubUrl: "#",
-    icon: BarChart3,
-    features: ["Data Visualization", "Real-time Data", "Analytics", "Custom Charts"]
-  },
-  {
-    title: "Portfolio Website",
-    description:
-      "A modern, responsive portfolio website built with Next.js and Tailwind CSS. Features smooth animations, dark mode, and optimized performance for showcasing professional work.",
-    technologies: ["Next.js", "React", "Tailwind CSS", "TypeScript", "Framer Motion"],
-    liveUrl: "#",
-    githubUrl: "#",
-    icon: Globe,
-    features: ["Responsive Design", "Dark Mode", "Smooth Animations", "SEO Optimized"]
+    features: ["Team Collaboration", "Task Management", "Real-time Updates", "Git Workflow Integration"]
   },
 ]
 
@@ -121,11 +121,11 @@ export function ProjectsSection() {
                         ))}
                       </div>
                       <div className="flex gap-4 pt-2">
-                        <Button variant="outline" className="bg-transparent hover:scale-105 transition-all duration-300">
+                        <Button variant="outline" className="bg-transparent cursor-pointer hover:scale-105 transition-all duration-300">
                           <ExternalLink className="h-4 w-4 mr-2" />
                           Live Demo
                         </Button>
-                        <Button variant="outline" className="bg-transparent hover:scale-105 transition-all duration-300">
+                        <Button variant="outline" className="bg-transparent cursor-pointer hover:scale-105 transition-all duration-300">
                           <Github className="h-4 w-4 mr-2" />
                           View Code
                         </Button>
