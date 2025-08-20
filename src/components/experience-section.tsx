@@ -6,30 +6,12 @@ const experiences = [
   {
     title: "MERN Stack Developer Intern",
     company: "Tellis",
-    period: "2024 - Present",
+    period: "July 2025 - August 2025",
     description:
       "Working on real-world projects using MongoDB, Express.js, React.js, and Node.js. Collaborating with development teams, implementing Git workflows, and applying best practices for both frontend and backend development.",
     technologies: ["React", "Node.js", "MongoDB", "Express.js", "Git", "REST APIs"],
     icon: Rocket,
-  },
-  {
-    title: "Full Stack Developer",
-    company: "Tech Solutions Inc.",
-    period: "2023 - 2024",
-    description:
-      "Developed scalable web applications using modern technologies. Implemented responsive designs, optimized performance, and collaborated with cross-functional teams to deliver high-quality solutions.",
-    technologies: ["React", "Node.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
-    icon: Building2,
-  },
-  {
-    title: "Frontend Developer",
-    company: "Digital Agency Co.",
-    period: "2022 - 2023",
-    description:
-      "Created responsive web applications and collaborated with design teams. Focused on user experience optimization and implemented modern frontend frameworks and best practices.",
-    technologies: ["React", "Vue.js", "JavaScript", "CSS3", "Git"],
-    icon: Star,
-  },
+  }
 ]
 
 export function ExperienceSection() {

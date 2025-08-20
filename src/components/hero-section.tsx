@@ -33,10 +33,16 @@ export function HeroSection() {
 
           <div className="flex justify-center space-x-6 pt-8">
             <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Github className="h-6 w-6" />
+
+              <a href="https://github.com/rupsa45" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
+
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12">
-              <Linkedin className="h-6 w-6" />
+              <a href="https://www.linkedin.com/in/rupsa-das-96b26b231/" target="_blank" rel="noopener noreferrer">
+              <Linkedin className="h-5 w-5" />
+            </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12">
               <Mail className="h-6 w-6" />
@@ -48,6 +54,6 @@ export function HeroSection() {
           </div>
         </div>
       </div>
-    </section>
+    </section >
   )
 }

@@ -9,7 +9,7 @@ import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 export function ContactSection() {
   const [copied, setCopied] = useState(false)
   const { ref, isVisible } = useScrollAnimation()
-  const email = "rupsadas123@gmail.com"
+  const email = "dasrupsa831@gmail.com"
 
   const copyEmail = async () => {
     try {
@@ -37,22 +37,8 @@ export function ContactSection() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="px-4 sm:px-6 lg:px-8">
-        <div
-          className={`mb-16 transition-all duration-1000 delay-200 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
-        >
-          <div className="flex items-center gap-3 mb-4">
-            <div className="bg-primary/10 p-2 rounded-lg">
-              <Mail className="h-6 w-6 text-primary" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Get In Touch</h2>
-          </div>
-          <p className="text-lg text-muted-foreground max-w-2xl">
-            I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a question or just want to say hi!
-          </p>
-        </div>
+      <div className="sm:px-6 lg:px-8">
+      
 
         <div
           className={`grid md:grid-cols-2 gap-8 transition-all duration-1000 delay-400 ${
@@ -61,6 +47,15 @@ export function ContactSection() {
         >
           {/* Left Column - Contact Info */}
           <div className="space-y-6">
+            <div className="flex items-center gap-3 mb-4">
+            <div className="bg-primary/10 p-2 rounded-lg">
+              <Mail className="h-6 w-6 text-primary" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Get In Touch</h2>
+          </div>
+          <p className="text-lg text-muted-foreground max-w-2xl">
+            I'm currently open to new opportunities and collaborations. Feel free to reach out if you have a question or just want to say hi!
+          </p>
             <Button
               onClick={downloadResume}
               className="w-full bg-white text-black hover:bg-gray-100 transition-all duration-300"
@@ -98,7 +93,7 @@ export function ContactSection() {
                   <Button
                     variant="link"
                     className="text-primary p-0 h-auto"
-                    onClick={() => window.open("https://github.com/rupsadas", "_blank")}
+                    onClick={() => window.open("https://github.com/rupsa45", "_blank")}
                   >
                     Visit GitHub <ArrowRight className="h-4 w-4 ml-1" />
                   </Button>
@@ -119,10 +114,11 @@ export function ContactSection() {
                   <Button
                     variant="link"
                     className="text-primary p-0 h-auto"
-                    onClick={() => window.open("https://linkedin.com/in/rupsadas", "_blank")}
+                    onClick={() => window.open("https://www.linkedin.com/in/rupsa-das-96b26b231/", "_blank")}
                   >
                     Visit LinkedIn <ArrowRight className="h-4 w-4 ml-1" />
                   </Button>
+
                 </div>
               </CardContent>
             </Card>

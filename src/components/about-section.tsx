@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
-import { GraduationCap, Award, Users, Target, Lightbulb, Code2 } from "lucide-react"
+import { GraduationCap } from "lucide-react"
 
 export function AboutSection() {
   const { ref, isVisible } = useScrollAnimation()
