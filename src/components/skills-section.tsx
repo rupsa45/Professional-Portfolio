@@ -1,3 +1,5 @@
+"use client"
+
 import { Code, Database, Globe, Wrench } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
