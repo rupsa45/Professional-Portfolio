@@ -28,19 +28,19 @@ export function SkillsSection() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" px-4 sm:px-6 lg:px-8">
         <div
-          className={`text-center mb-16 transition-all duration-1000 delay-200 ${
+          className={`mb-16 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center gap-3 mb-4">
             <div className="bg-primary/10 p-2 rounded-lg transition-all-smooth hover:scale-110">
               <Code className="h-6 w-6 text-primary" />
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground">Skills</h2>
           </div>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl">
             Technologies and tools I use to bring ideas to life
           </p>
         </div>

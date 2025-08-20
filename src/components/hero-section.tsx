@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowDown, Github, Linkedin, Mail } from "lucide-react"
+import { ArrowDown, Github, Linkedin, Mail, Code, Download } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -22,9 +22,11 @@ export function HeroSection() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Code className="h-5 w-5 mr-2" />
               View My Work
             </Button>
             <Button variant="outline" size="lg">
+              <Download className="h-5 w-5 mr-2" />
               Download Resume
             </Button>
           </div>

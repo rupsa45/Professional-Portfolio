@@ -2,6 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
+import { GraduationCap, Award, Users, Target, Lightbulb, Code2 } from "lucide-react"
 
 export function AboutSection() {
   const { ref, isVisible } = useScrollAnimation()
@@ -14,14 +15,14 @@ export function AboutSection() {
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className=" px-4 sm:px-6 lg:px-8">
         <div
-          className={`text-center mb-16 transition-all duration-1000 delay-200 ${
+          className={`mb-16 transition-all duration-1000 delay-200 ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
           <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">About Me</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-lg text-muted-foreground max-w-2xl">
             Crafting digital solutions with passion and precision
           </p>
         </div>
@@ -38,6 +39,25 @@ export function AboutSection() {
             <p className="text-lg text-muted-foreground leading-relaxed">
             Recently, I worked on Tellis during my internship as a MERN Stack Developer, where I gained experience in team collaboration, strengthened my Git workflow, and enhanced my MERN stack proficiency by applying best practices across both frontend and backend development.
             </p>
+            
+                         <div className="flex flex-wrap gap-4 pt-4">
+               <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                 <div className="w-2 h-2 bg-primary rounded-full"></div>
+                 <span>MERN Stack Development</span>
+               </div>
+               <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                 <div className="w-2 h-2 bg-primary rounded-full"></div>
+                 <span>Responsive Web Design</span>
+               </div>
+               <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                 <div className="w-2 h-2 bg-primary rounded-full"></div>
+                 <span>Team Collaboration</span>
+               </div>
+               <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                 <div className="w-2 h-2 bg-primary rounded-full"></div>
+                 <span>Clean Code Practices</span>
+               </div>
+             </div>
           </div>
 
           <div
@@ -47,7 +67,10 @@ export function AboutSection() {
           >
             <Card className="hover:shadow-lg transition-shadow duration-300">
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-4 text-center">Education</h3>
+                                 <h3 className="text-xl font-semibold mb-4 flex items-center gap-2">
+                   <GraduationCap className="h-5 w-5 text-primary" />
+                   Education
+                 </h3>
                 <div className="space-y-4">
                   <div className="border-l-4 border-primary pl-4 hover:bg-muted/20 transition-colors duration-300 p-2 rounded-r">
                   <h4 className="font-semibold text-lg">Asansol Engineering College,Asansol,India</h4>
