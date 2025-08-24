@@ -54,26 +54,30 @@ export function HeroSection() {
           </div>
 
           <div className="flex justify-center space-x-6 pt-8">
-            <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
-
-              <a href="https://github.com/rupsa45" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/rupsa45" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
                 <Github className="h-5 w-5" />
-              </a>
-
-            </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
-              <a href="https://www.linkedin.com/in/rupsa-das-96b26b231/" target="_blank" rel="noopener noreferrer">
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/rupsa-das-96b26b231/" target="_blank" rel="noopener noreferrer">
+              <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
                 <Linkedin className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
+              </Button>
+            </a>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="h-12 w-12 cursor-pointer"
+              onClick={() => window.location.href = "mailto:dasrupsa831@gmail.com"}
+            >
               <Mail className="h-6 w-6" />
             </Button>
+
           </div>
 
           <div className="pt-12">
-            <ArrowDown 
-              className="h-6 w-6 mx-auto text-muted-foreground animate-bounce cursor-pointer hover:text-primary transition-colors duration-300" 
+            <ArrowDown
+              className="h-6 w-6 mx-auto text-muted-foreground animate-bounce cursor-pointer hover:text-primary transition-colors duration-300"
               onClick={scrollToAbout}
             />
           </div>

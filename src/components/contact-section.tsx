@@ -71,7 +71,7 @@ export function ContactSection() {
                 variant="outline"
                 size="sm"
                 onClick={copyEmail}
-                className="bg-primary/10 hover:bg-primary/20 border-primary/30 hover:border-primary/50 text-primary hover:text-primary/80 transition-all duration-200 font-medium px-4 py-2 rounded-md shadow-sm hover:shadow-md"
+                className="bg-primary/10 cursor-pointer hover:bg-primary/20 border-primary/30 hover:border-primary/50 text-primary hover:text-primary/80 transition-all duration-200 font-medium px-4 py-2 rounded-md shadow-sm hover:shadow-md"
               >
                 {copied ? "Copied!" : "Copy"}
               </Button>
