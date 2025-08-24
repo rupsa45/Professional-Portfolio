@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail, Code, Download } from "lucide-react"
 
+
+
 export function HeroSection() {
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-card">
@@ -21,16 +23,19 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center ">
-            <Button  
-               size="lg" 
-               className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer">
+
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer">
               <Code className="h-5 w-5 mr-2" />
               View My Work
             </Button>
-            <Button variant="outline" size="lg" className="cursor-pointer">
-              <Download className="h-5 w-5 mr-2" />
-              Download Resume
-            </Button>
+            <a href="/RupsaDas.pdf" download="Rupsa_Das_Resume.pdf">
+              <Button variant="outline" size="lg" className="cursor-pointer">
+                <Download className="h-5 w-5 mr-2" />
+                Download Resume
+              </Button>
+            </a>
           </div>
 
           <div className="flex justify-center space-x-6 pt-8">
@@ -43,8 +48,8 @@ export function HeroSection() {
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
               <a href="https://www.linkedin.com/in/rupsa-das-96b26b231/" target="_blank" rel="noopener noreferrer">
-              <Linkedin className="h-5 w-5" />
-            </a>
+                <Linkedin className="h-5 w-5" />
+              </a>
             </Button>
             <Button variant="ghost" size="icon" className="h-12 w-12 cursor-pointer">
               <Mail className="h-6 w-6" />

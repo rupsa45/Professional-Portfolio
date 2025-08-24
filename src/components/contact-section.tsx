@@ -24,7 +24,7 @@ export function ContactSection() {
   const downloadResume = () => {
     // Create a dummy PDF download - in real implementation, this would be your actual resume file
     const link = document.createElement("a")
-    link.href = "/resume.pdf" // Replace with actual resume file path
+    link.href = "/RupsaDas.pdf" // Replace with actual resume file path
     link.download = "Rupsa_Das_Resume.pdf"
     link.click()
   }
@@ -58,7 +58,7 @@ export function ContactSection() {
           </p>
             <Button
               onClick={downloadResume}
-              className="w-full bg-white text-black hover:bg-gray-100 transition-all duration-300"
+              className="w-full bg-white text-black hover:bg-gray-100 transition-all duration-300 cursor-pointer"
               size="lg"
             >
               <ArrowRight className="h-4 w-4 mr-2" />
@@ -88,11 +88,11 @@ export function ContactSection() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-semibold text-foreground">GitHub</h3>
-                    <p className="text-sm text-muted-foreground">Check out my code repositories</p>
+                    <p className="text-sm text-muted-foreground ">Check out my code repositories</p>
                   </div>
                   <Button
                     variant="link"
-                    className="text-primary p-0 h-auto"
+                    className="text-primary p-0 h-auto cursor-pointer"
                     onClick={() => window.open("https://github.com/rupsa45", "_blank")}
                   >
                     Visit GitHub <ArrowRight className="h-4 w-4 ml-1" />
@@ -113,7 +113,7 @@ export function ContactSection() {
                   </div>
                   <Button
                     variant="link"
-                    className="text-primary p-0 h-auto"
+                    className="text-primary p-0 h-auto cursor-pointer"
                     onClick={() => window.open("https://www.linkedin.com/in/rupsa-das-96b26b231/", "_blank")}
                   >
                     Visit LinkedIn <ArrowRight className="h-4 w-4 ml-1" />

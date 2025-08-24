@@ -74,13 +74,13 @@ export function AboutSection() {
                 <div className="space-y-4">
                   <div className="border-l-4 border-primary pl-4 hover:bg-muted/20 transition-colors duration-300 p-2 rounded-r">
                   <h4 className="font-semibold text-lg">Asansol Engineering College,Asansol,India</h4>
-                    <h4 className="font-semibold text-lg">Bachelor of Technology in Information Technology</h4>
-                    <p className="text-muted-foreground">Computer Science Engineering</p>
+                    <h3 className=" font-sans " >Bachelor of Technology in Information Technology</h3>
+                    {/* <p className="text-muted-foreground">Computer Science Engineering</p> */}
                     <p className="text-sm text-muted-foreground">2021 - 2025</p>
                   </div>
                   <div className="border-l-4 border-primary pl-4 hover:bg-muted/20 transition-colors duration-300 p-2 rounded-r">
                   <h4 className="font-semibold text-lg">DAV Public School,Rupnarayanpur,India</h4>
-                    <h4 className="font-semibold text-lg">Higher Secondary (12th)</h4>
+                    <h3 className="font-semibold text-lg">Higher Secondary (12th)</h3>
                     <p className="text-muted-foreground">Science Stream</p>
                     <p className="text-sm text-muted-foreground">2006 - 2021</p>
                   </div>
