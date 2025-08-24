@@ -1,9 +1,23 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowDown, Github, Linkedin, Mail, Code, Download } from "lucide-react"
 
-
-
 export function HeroSection() {
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById('about')
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
+  const scrollToProjects = () => {
+    const projectsSection = document.getElementById('projects')
+    if (projectsSection) {
+      projectsSection.scrollIntoView({ behavior: 'smooth' })
+    }
+  }
+
   return (
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background to-card">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -26,7 +40,8 @@ export function HeroSection() {
 
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer">
+              className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer"
+              onClick={scrollToProjects}>
               <Code className="h-5 w-5 mr-2" />
               View My Work
             </Button>
@@ -57,7 +72,10 @@ export function HeroSection() {
           </div>
 
           <div className="pt-12">
-            <ArrowDown className="h-6 w-6 mx-auto text-muted-foreground animate-bounce" />
+            <ArrowDown 
+              className="h-6 w-6 mx-auto text-muted-foreground animate-bounce cursor-pointer hover:text-primary transition-colors duration-300" 
+              onClick={scrollToAbout}
+            />
           </div>
         </div>
       </div>
