@@ -25,6 +25,13 @@ export function Navigation() {
               </Button>
               <Button
                 variant="ghost"
+                onClick={() => scrollToSection("experience")}
+                className="text-foreground hover:text-primary"
+              >
+                Experience
+              </Button>
+              <Button
+                variant="ghost"
                 onClick={() => scrollToSection("projects")}
                 className="text-foreground hover:text-primary"
               >
