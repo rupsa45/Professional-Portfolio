@@ -4,7 +4,7 @@ import { Code, Database, Globe, Wrench } from "lucide-react"
 import { useScrollAnimation } from "@/hooks/use-scroll-animation"
 
 const skillsData = {
-  Technologies: ["React.js", "Next.js", "Node.js", "Express.js", "Zustand", "MongoDB", "Tailwind CSS"],
+  "Technologies": ["React.js", "Next.js", "Node.js", "Express.js", "Zustand", "MongoDB","MySQL", "PostgreSQL", "Tailwind CSS"],
   "Programming Languages": ["JavaScript", "TypeScript",  "Java"],
   "Tools and Platforms": ["Git", "GitHub", "Vercel",  "Docker", "Postman","VS Code", "postman"],
   "Other Subjects": ["Networking", "Database Management System", "Object Oriented Programming"],

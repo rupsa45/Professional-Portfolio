@@ -40,7 +40,7 @@ const projects = [
     title: "Employee Management System",
     description:
       "A real-time collaboration tool developed during my internship. Features task assignment, progress tracking, and Git workflow integration to streamline teamwork and project delivery.",
-    technologies: ["React", "Node.js", "MongoDB", "Express.js", "Socket.io","Electronjs"],
+    technologies: ["React", "Node.js", "PostgreSQL", "Express.js", "Socket.io","Electronjs"],
     liveUrl: "https://monitering-system-client.vercel.app/login",
     githubUrl: "#",
     icon: CheckSquare,
