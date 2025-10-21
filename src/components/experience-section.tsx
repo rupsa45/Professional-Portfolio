@@ -16,6 +16,16 @@ const experiences = [
       "Enhanced collaboration skills by working in a team environment, improving Git workflows, and communicating politely with team members.",
     ],
     technologies: ["React", "Node.js", "PostgreSQL", "Express.js", "Git", "REST APIs"],
+  },{
+    title: "Full-Stack Developer Intern",
+    company: "KreupAI Technologies LLC",
+    period: "July 2025 - August 2025",
+    description: [
+      "Collaborating on the development of a comprehensive facility management system designed to streamline finance management, escalation handling, and other operational workflows.",
+      "Crafted and integrated backend modules for CRM, Visitor Management, Finance, and Emergency Management using RESTful APIs (GET, POST, DELETE, PATCH) to enable seamless CRUD operations",
+      "Leveraging Next.js, TypeScript, Express.js, and PostgreSQL to deliver scalable, maintainable backend solutions."
+    ],
+    technologies: ["Next.js", "Node.js", "PostgreSQL", "Express.js", "Git", "GitHub", "REST APIs"],
   }
 ]
 
