@@ -19,7 +19,7 @@ const experiences = [
   },{
     title: "Full-Stack Developer Intern",
     company: "KreupAI Technologies LLC",
-    period: "July 2025 - August 2025",
+    period: "August 2025-Present",
     description: [
       "Collaborating on the development of a comprehensive facility management system designed to streamline finance management, escalation handling, and other operational workflows.",
       "Crafted and integrated backend modules for CRM, Visitor Management, Finance, and Emergency Management using RESTful APIs (GET, POST, DELETE, PATCH) to enable seamless CRUD operations",
